@@ -1,0 +1,39 @@
+#NEXUS 
+
+Begin trees;  [Treefile saved Wed Feb  7 10:54:17 2018]
+[!
+>Consensus of 1 trees
+>
+>Source of trees from which consensus(es) calculated...
+>Bootstrap method with heuristic search:
+>  Number of bootstrap replicates = 200
+>  Starting seed = generated automatically
+>  Number of characters resampled in each replicate = 1149
+>  Optimality criterion = parsimony
+>    Character-status summary:
+>      Of 1149 total characters:
+>        All characters are of type 'unord'
+>        All characters have equal weight
+>        478 characters are constant
+>        121 variable characters are parsimony-uninformative
+>        Number of parsimony-informative characters = 550
+>    Gaps are treated as "missing"
+>  Starting tree(s) obtained via stepwise addition
+>    Addition sequence: random
+>    Number of replicates = 10
+>    Starting seed = generated automatically
+>    Number of trees held at each step = 1
+>  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+>    Steepest descent option not in effect
+>  Initial 'Maxtrees' setting = 100
+>  Branches collapsed (creating polytomies) if maximum branch length is zero
+>  'MulTrees' option in effect
+>  No topological constraints in effect
+>  Trees are unrooted
+>
+>  200 bootstrap replicates completed
+>  Time used = 14.62 sec (CPU time = 14.63 sec)
+]
+	tree Strict = [&U] (Platypus,Echidna,(((Opossum,Bandicoot),Wallaby),(Elephant,Aardvark,(Tenrec,Hedgehog),Sloth,Armadillo,Human,Tree_shrew,Rabbit,Mouse,Flying_fox,Cat,Dog,(Pig,Whale))));
+	tree MajRule = [&U] (Platypus,Echidna,(((Opossum,Bandicoot)100,Wallaby)100,(Elephant,Aardvark,(Tenrec,Hedgehog)100,Sloth,Armadillo,Human,Tree_shrew,Rabbit,Mouse,Flying_fox,Cat,Dog,(Pig,Whale)100)100)100)0;
+end;

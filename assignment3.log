@@ -1,0 +1,515 @@
+
+P A U P *
+Version 4.0a (build 159) for Unix/Linux (built on Nov 17 2017 at 11:35:17)
+Wed Feb  7 10:24:51 2018
+
+        -----------------------------NOTICE-----------------------------
+          This is an alpha-test version that is still changing rapidly.
+          It will expire on 1 Apr 2018.
+        
+          Please report bugs to dave@phylosolutions.com
+        ----------------------------------------------------------------
+
+
+paup> hsearch start=stepwise swap=none nreps=1
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: simple (reference taxon = Platypus)
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: none
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 0
+  Score of best tree(s) found = 3293
+  Number of trees retained = 1
+  Time used = 0.00 sec (CPU time = 0.00 sec)
+
+paup> hsearch start=stepwise swap=nni nreps=1
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: simple (reference taxon = Platypus)
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: nearest-neighbor interchange (NNI)
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 82
+  Score of best tree(s) found = 3289
+  Number of trees retained = 2
+  Time used = 0.01 sec (CPU time = 0.00 sec)
+
+paup> hsearch swap=spr nreps=1 start=stepwise
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: simple (reference taxon = Platypus)
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: subtree-pruning-regrafting (SPR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 3186
+  Score of best tree(s) found = 3288
+  Number of trees retained = 1
+  Time used = 0.02 sec (CPU time = 0.01 sec)
+
+paup> hsearch start=stepwise swap=tbr nreps=1
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: simple (reference taxon = Platypus)
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 9672
+  Score of best tree(s) found = 3288
+  Number of trees retained = 1
+  Time used = 0.02 sec (CPU time = 0.02 sec)
+
+paup> hsearch swap=tbr start=stepwise  nreps=100
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: simple (reference taxon = Platypus)
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 9672
+  Score of best tree(s) found = 3288
+  Number of trees retained = 1
+  Time used = 0.01 sec (CPU time = 0.02 sec)
+
+paup> hsearch swap=tbr start=stepwise  nreps=100 addSeq=random
+
+Heuristic search settings:
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+  Starting tree(s) obtained via stepwise addition
+    Addition sequence: random
+    Number of replicates = 100
+    Starting seed = generated automatically
+    Number of trees held at each step = 1
+  Branch-swapping algorithm: tree-bisection-reconnection (TBR) with reconnection limit = 8
+    Steepest descent option not in effect
+  Initial 'Maxtrees' setting = 100
+  Branches collapsed (creating polytomies) if maximum branch length is zero
+  'MulTrees' option in effect
+  No topological constraints in effect
+  Trees are unrooted
+
+Heuristic search completed
+  Total number of rearrangements tried = 817133
+  Score of best tree(s) found = 3279
+  Number of trees retained = 3
+  Time used = 0.77 sec (CPU time = 0.77 sec)
+
+Tree-island profile:
+                     First      Last                        First    Times
+Island      Size      tree      tree           Score    replicate      hit
+--------------------------------------------------------------------------
+     1         3         1         3            3279            2      13
+     2         1         -         -            3281           10      17*
+     3         3         -         -            3281            3      27*
+     4         1         -         -            3282            8       5*
+     5         1         -         -            3284           59       3*
+     6         1         -         -            3286           29       4*
+     7         1         -         -            3287            6       6*
+     8         1         -         -            3288           34       4*
+     9         1         -         -            3289           38       3*
+    10         1         -         -            3290            9       5*
+    11         1         -         -            3291           62       2*
+    12         4         -         -            3291           13       1
+    13         1         -         -            3292            7       4*
+    14         1         -         -            3293           42       1
+    15         1         -         -            3294           44       1
+    16         2         -         -            3294           88       1
+    17         1         -         -            3295            1       2*
+    18         1         -         -            3298            5       1
+
+Note(s):
+    * Multiple hits on islands of unsaved trees may in fact represent different islands
+
+paup> showtrees all
+
+Note: No outgroup has been defined; trees are (arbitrarily) rooted at first taxon.
+
+Tree 1 (rooted using default outgroup)
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|         /--------------------------------------------------------------------------------------- Echidna
+|         |
+|         |                                                                            /---------- Opossum
+|         |                                                                   /--------+
+|         |                                                                   |        \---------- Bandicoot
+|         |        /----------------------------------------------------------+
+|         |        |                                                          \------------------- Wallaby
+|         |        |
+|         |        |                                                          /------------------- Elephant
+\---------+        |                                                          |
+          |        |                                                /---------+        /---------- Tenrec
+          |        |                                                |         \--------+
+          |        |                                      /---------+                  \---------- Hedgehog
+          |        |                                      |         |
+          |        |                                      |         |                  /---------- Aardvark
+          |        |                                      |         \------------------+
+          |        |                             /--------+                            \---------- Rabbit
+          |        |                             |        |
+          \--------+                             |        |                            /---------- Sloth
+                   |                             |        \----------------------------+
+                   |                             |                                     \---------- Armadillo
+                   |                   /---------+
+                   |                   |         |                                     /---------- Human
+                   |                   |         |                            /--------+
+                   |                   |         |                            |        \---------- Cat
+                   |                   |         |                  /---------+
+                   |                   |         |                  |         \------------------- Dog
+                   |                   |         \------------------+
+                   |         /---------+                            |         /------------------- Flying fox
+                   |         |         |                            |         |
+                   |         |         |                            \---------+        /---------- Pig
+                   |         |         |                                      \--------+
+                   \---------+         |                                               \---------- Whale
+                             |         |
+                             |         \---------------------------------------------------------- Tree shrew
+                             |
+                             \-------------------------------------------------------------------- Mouse
+
+Tree 2 (rooted using default outgroup)
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|        /---------------------------------------------------------------------------------------- Echidna
+|        |
+|        |                                                                              /--------- Opossum
+|        |                                                                     /--------+
+|        |                                                                     |        \--------- Bandicoot
+|        |        /------------------------------------------------------------+
+|        |        |                                                            \------------------ Wallaby
+|        |        |
+|        |        |                                                            /------------------ Elephant
+\--------+        |                                                            |
+         |        |                                                    /-------+        /--------- Tenrec
+         |        |                                                    |       \--------+
+         |        |                                           /--------+                \--------- Hedgehog
+         |        |                                           |        |
+         |        |                                           |        |                /--------- Aardvark
+         |        |                                           |        \----------------+
+         |        |                                  /--------+                         \--------- Rabbit
+         |        |                                  |        |
+         |        |                                  |        |                         /--------- Human
+         \--------+                                  |        |                /--------+
+                  |                                  |        |                |        \--------- Cat
+                  |                         /--------+        \----------------+
+                  |                         |        |                         \------------------ Dog
+                  |                         |        |
+                  |                         |        |                         /------------------ Flying fox
+                  |                         |        |                         |
+                  |                /--------+        \-------------------------+        /--------- Pig
+                  |                |        |                                  \--------+
+                  |                |        |                                           \--------- Whale
+                  |                |        |
+                  |       /--------+        |                                           /--------- Sloth
+                  |       |        |        \-------------------------------------------+
+                  |       |        |                                                    \--------- Armadillo
+                  \-------+        |
+                          |        \-------------------------------------------------------------- Tree shrew
+                          |
+                          \----------------------------------------------------------------------- Mouse
+
+Tree 3 (rooted using default outgroup)
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|         /--------------------------------------------------------------------------------------- Echidna
+|         |
+|         |                                                                            /---------- Opossum
+|         |                                                                   /--------+
+|         |                                                                   |        \---------- Bandicoot
+|         |        /----------------------------------------------------------+
+|         |        |                                                          \------------------- Wallaby
+|         |        |
+|         |        |                                                          /------------------- Elephant
+\---------+        |                                                          |
+          |        |                                                /---------+        /---------- Tenrec
+          |        |                                                |         \--------+
+          |        |                                      /---------+                  \---------- Hedgehog
+          |        |                                      |         |
+          |        |                                      |         |                  /---------- Aardvark
+          |        |                                      |         \------------------+
+          |        |                             /--------+                            \---------- Rabbit
+          |        |                             |        |
+          \--------+                             |        |                            /---------- Sloth
+                   |                             |        \----------------------------+
+                   |                             |                                     \---------- Armadillo
+                   |                             |
+                   |                             |                                     /---------- Human
+                   |                   /---------+                            /--------+
+                   |                   |         |                            |        \---------- Cat
+                   |                   |         |                  /---------+
+                   |                   |         |                  |         \------------------- Dog
+                   |                   |         |        /---------+
+                   |         /---------+         |        |         |                  /---------- Pig
+                   |         |         |         \--------+         \------------------+
+                   |         |         |                  |                            \---------- Whale
+                   |         |         |                  |
+                   \---------+         |                  \--------------------------------------- Flying fox
+                             |         |
+                             |         \---------------------------------------------------------- Tree shrew
+                             |
+                             \-------------------------------------------------------------------- Mouse
+
+paup> describe
+
+Tree description:
+
+  Unrooted tree(s) rooted using outgroup method
+
+  Note: No outgroup has been defined; trees are (arbitrarily) rooted at first taxon.
+  Optimality criterion = parsimony
+    Character-status summary:
+      Of 1149 total characters:
+        All characters are of type 'unord'
+        All characters have equal weight
+        478 characters are constant
+        121 variable characters are parsimony-uninformative
+        Number of parsimony-informative characters = 550
+    Gaps are treated as "missing"
+    Character-state optimization: Accelerated transformation (ACCTRAN)
+
+Tree 1 (rooted using default outgroup)
+
+Tree length = 3279
+Consistency index (CI) = 0.3586
+Homoplasy index (HI) = 0.6414
+CI excluding uninformative characters = 0.3283
+HI excluding uninformative characters = 0.6717
+Retention index (RI) = 0.2678
+Rescaled consistency index (RC) = 0.0960
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|         /--------------------------------------------------------------------------------------- Echidna
+|         |
+|         |                                                                            /---------- Opossum
+|         |                                                                   /-------21
+|         |                                                                   |        \---------- Bandicoot
+|         |        /---------------------------------------------------------22
+|         |        |                                                          \------------------- Wallaby
+|         |        |
+|         |        |                                                          /------------------- Elephant
+\--------38        |                                                          |
+          |        |                                                /--------24        /---------- Tenrec
+          |        |                                                |         \-------23
+          |        |                                      /--------26                  \---------- Hedgehog
+          |        |                                      |         |
+          |        |                                      |         |                  /---------- Aardvark
+          |        |                                      |         \-----------------25
+          |        |                             /-------28                            \---------- Rabbit
+          |        |                             |        |
+          \-------37                             |        |                            /---------- Sloth
+                   |                             |        \---------------------------27
+                   |                             |                                     \---------- Armadillo
+                   |                   /--------34
+                   |                   |         |                                     /---------- Human
+                   |                   |         |                            /-------29
+                   |                   |         |                            |        \---------- Cat
+                   |                   |         |                  /--------30
+                   |                   |         |                  |         \------------------- Dog
+                   |                   |         \-----------------33
+                   |         /--------35                            |         /------------------- Flying fox
+                   |         |         |                            |         |
+                   |         |         |                            \--------32        /---------- Pig
+                   |         |         |                                      \-------31
+                   \--------36         |                                               \---------- Whale
+                             |         |
+                             |         \---------------------------------------------------------- Tree shrew
+                             |
+                             \-------------------------------------------------------------------- Mouse
+
+Tree 2 (rooted using default outgroup)
+
+Tree length = 3279
+Consistency index (CI) = 0.3586
+Homoplasy index (HI) = 0.6414
+CI excluding uninformative characters = 0.3283
+HI excluding uninformative characters = 0.6717
+Retention index (RI) = 0.2678
+Rescaled consistency index (RC) = 0.0960
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|        /---------------------------------------------------------------------------------------- Echidna
+|        |
+|        |                                                                              /--------- Opossum
+|        |                                                                     /-------21
+|        |                                                                     |        \--------- Bandicoot
+|        |        /-----------------------------------------------------------22
+|        |        |                                                            \------------------ Wallaby
+|        |        |
+|        |        |                                                            /------------------ Elephant
+\-------38        |                                                            |
+         |        |                                                    /------24        /--------- Tenrec
+         |        |                                                    |       \-------23
+         |        |                                           /-------26                \--------- Hedgehog
+         |        |                                           |        |
+         |        |                                           |        |                /--------- Aardvark
+         |        |                                           |        \---------------25
+         |        |                                  /-------29                         \--------- Rabbit
+         |        |                                  |        |
+         |        |                                  |        |                         /--------- Human
+         \-------37                                  |        |                /-------27
+                  |                                  |        |                |        \--------- Cat
+                  |                         /-------32        \---------------28
+                  |                         |        |                         \------------------ Dog
+                  |                         |        |
+                  |                         |        |                         /------------------ Flying fox
+                  |                         |        |                         |
+                  |                /-------34        \------------------------31        /--------- Pig
+                  |                |        |                                  \-------30
+                  |                |        |                                           \--------- Whale
+                  |                |        |
+                  |       /-------35        |                                           /--------- Sloth
+                  |       |        |        \------------------------------------------33
+                  |       |        |                                                    \--------- Armadillo
+                  \------36        |
+                          |        \-------------------------------------------------------------- Tree shrew
+                          |
+                          \----------------------------------------------------------------------- Mouse
+
+Tree 3 (rooted using default outgroup)
+
+Tree length = 3279
+Consistency index (CI) = 0.3586
+Homoplasy index (HI) = 0.6414
+CI excluding uninformative characters = 0.3283
+HI excluding uninformative characters = 0.6717
+Retention index (RI) = 0.2678
+Rescaled consistency index (RC) = 0.0960
+
+/------------------------------------------------------------------------------------------------- Platypus
+|
+|         /--------------------------------------------------------------------------------------- Echidna
+|         |
+|         |                                                                            /---------- Opossum
+|         |                                                                   /-------21
+|         |                                                                   |        \---------- Bandicoot
+|         |        /---------------------------------------------------------22
+|         |        |                                                          \------------------- Wallaby
+|         |        |
+|         |        |                                                          /------------------- Elephant
+\--------38        |                                                          |
+          |        |                                                /--------24        /---------- Tenrec
+          |        |                                                |         \-------23
+          |        |                                      /--------26                  \---------- Hedgehog
+          |        |                                      |         |
+          |        |                                      |         |                  /---------- Aardvark
+          |        |                                      |         \-----------------25
+          |        |                             /-------28                            \---------- Rabbit
+          |        |                             |        |
+          \-------37                             |        |                            /---------- Sloth
+                   |                             |        \---------------------------27
+                   |                             |                                     \---------- Armadillo
+                   |                             |
+                   |                             |                                     /---------- Human
+                   |                   /--------34                            /-------29
+                   |                   |         |                            |        \---------- Cat
+                   |                   |         |                  /--------30
+                   |                   |         |                  |         \------------------- Dog
+                   |                   |         |        /--------32
+                   |         /--------35         |        |         |                  /---------- Pig
+                   |         |         |         \-------33         \-----------------31
+                   |         |         |                  |                            \---------- Whale
+                   |         |         |                  |
+                   \--------36         |                  \--------------------------------------- Flying fox
+                             |         |
+                             |         \---------------------------------------------------------- Tree shrew
+                             |
+                             \-------------------------------------------------------------------- Mouse
+
+paup> cleartrees
+
+All trees have been cleared from memory.
+
+paup> log stop

@@ -1,0 +1,22 @@
+#NEXUS 
+
+[!
+FASTA file "~/EEOB563/EEOB563-Spring2018/eeob563/pars_nt.aln"
+  (imported Wed Feb  7 09:48:24 2018)
+]
+Begin data;
+    Dimensions ntax=10 nchar=30;
+    Format datatype=nucleotide gap=- missing=?;
+    Matrix
+Dolphin      atgacgaacatccgaaattcacaccctctt
+Hippopotamus atgacaaacatccgaaaatctcacccacta
+Camel        atgacaaacatccgaaaatcacacccacta
+Cow          atgacaaacattcgaaagtcccacccacta
+Giraffe      atgataaacatccgaaagtcccacccacta
+Sperm_whale  atgacaaacatccgaaaatcacacccacta
+Blue_whale   atgacaaacatccgaaaatcacacccacta
+Pig          atgacaaacatccgaaaatcacacccacta
+Sheep        atgacaaacatccgaaaatcccacccactg
+Goat         atgacaaacatccgaaagtcccacccatta
+    ;
+End;
